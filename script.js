@@ -35,3 +35,8 @@ let [firstScore, secondScore] = scores;
 console.log("First score (Destructured):", firstScore);
 console.log("Second score (Destructured):", secondScore);
 
+// 4.a. Use the spread operator to clone the "student" object and modify the cloned object
+let modifiedStudentClone = { ...student, graduationYear: 2025 };
+console.log("Modified student object clone:", modifiedStudentClone);
+console.log("Original student object:", student); // Original object remains unchanged
+
