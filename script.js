@@ -8,3 +8,9 @@ let student = {
         return `--- Student Information ---\nName: ${this.name}\nAge: ${this.age}\nEnrolled: ${this.isEnrolled}\nCourses: ${this.courses.join(", " )}`
     }
 };
+
+// 1.b. Log specific properties/method of the "student" object
+console.log(`Name: ${student.name}`);
+console.log(`Age: ${student.age}`);
+console.log(student.displayBasicInfo());
+
