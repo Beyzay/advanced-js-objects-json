@@ -18,3 +18,9 @@ console.log(student.displayBasicInfo());
 let studentJSONString = JSON.stringify(student);
 console.log("JSON string:", studentJSONString); // JSON String - only data (methods lost)
 
+// 2.b. Convert the student JSON string "studentJSONString" into a new JS object
+// And log it to compare with the original "student" object
+let studentJSONObj = JSON.parse(studentJSONString);
+console.log("JSON object:", studentJSONObj); // Parsed JSON object - only data (no methods)
+console.log("Original object:", student);
+
