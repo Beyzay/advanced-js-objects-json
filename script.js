@@ -29,3 +29,9 @@ let { name, courses } = student;
 console.log("Name (Destructured):", name);
 console.log("Courses (Destructured):", courses);
 
+// 3.b. Create an array of scores and destructure the first 2 scores and log them
+let scores = [95, 90, 100];
+let [firstScore, secondScore] = scores;
+console.log("First score (Destructured):", firstScore);
+console.log("Second score (Destructured):", secondScore);
+
