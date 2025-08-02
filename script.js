@@ -60,3 +60,10 @@ student.calcTotalCourseNumber = function () {
 }
 console.log("Total number of courses:", student.calcTotalCourseNumber());
 
+// 6.a. Use the "reduce()" method to calculate the average score from the array of scores
+let sumScore = scores.reduce((sum, value) => sum + value, 0); // Sums all values in the "scores" array
+let averageScore = sumScore / scores.length;
+
+console.log("Sum of scores:", sumScore);
+console.log("Total number of scores:", scores.length);
+console.log("Average score:", averageScore);
