@@ -24,3 +24,8 @@ let studentJSONObj = JSON.parse(studentJSONString);
 console.log("JSON object:", studentJSONObj); // Parsed JSON object - only data (no methods)
 console.log("Original object:", student);
 
+// 3.a. Destructure the "student" object to extract the "name" and "courses" properties and log them
+let { name, courses } = student;
+console.log("Name (Destructured):", name);
+console.log("Courses (Destructured):", courses);
+
