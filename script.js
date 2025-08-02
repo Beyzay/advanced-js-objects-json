@@ -54,3 +54,9 @@ student.addNewCourse = function (newCourse) {
 student.addNewCourse("Computer Science");
 console.log("Courses including new course(s):", student.courses);
 
+// 5.b. Add a method to the "student" object to calculate and return the total number of courses
+student.calcTotalCourseNumber = function () {
+    return this.courses.length;    
+}
+console.log("Total number of courses:", student.calcTotalCourseNumber());
+
