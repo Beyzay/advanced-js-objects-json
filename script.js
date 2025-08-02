@@ -40,3 +40,9 @@ let modifiedStudentClone = { ...student, graduationYear: 2025 };
 console.log("Modified student object clone:", modifiedStudentClone);
 console.log("Original student object:", student); // Original object remains unchanged
 
+// 4.b. Use the spread operator to combine "student.courses" with a new courses array
+let newCoursesArr = ["Music", "Literature"];
+let combinedCourses = [...student.courses, ...newCoursesArr];
+console.log("Combined courses:", combinedCourses);
+console.log("Original student courses array:", student.courses); // Original array remains unchanged
+
