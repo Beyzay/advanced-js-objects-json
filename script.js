@@ -14,3 +14,7 @@ console.log(`Name: ${student.name}`);
 console.log(`Age: ${student.age}`);
 console.log(student.displayBasicInfo());
 
+// 2.a. Convert the "student" JS object into a JSON string and log it
+let studentJSONString = JSON.stringify(student);
+console.log("JSON string:", studentJSONString); // JSON String - only data (methods lost)
+
