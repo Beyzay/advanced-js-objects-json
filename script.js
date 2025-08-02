@@ -46,3 +46,11 @@ let combinedCourses = [...student.courses, ...newCoursesArr];
 console.log("Combined courses:", combinedCourses);
 console.log("Original student courses array:", student.courses); // Original array remains unchanged
 
+// 5.a. Add a method to the "student" object to dynamically add a new course to the "courses" array
+student.addNewCourse = function (newCourse) {
+    this.courses.push(newCourse);
+};
+
+student.addNewCourse("Computer Science");
+console.log("Courses including new course(s):", student.courses);
+
